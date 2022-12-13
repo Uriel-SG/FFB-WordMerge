@@ -9,12 +9,11 @@ from docxcompose.composer import Composer
 from docx import Document
 import os
 import webbrowser
-import pyautogui as pa
-import time
+
 
 #La nostra finestra
 window = tk.Tk()
-window.title("FFB-Word-Merging")
+window.title("FFB-Word-Merge")
 window.geometry("1599x899")
 window.iconbitmap("ffb.ico")
 window.attributes("-fullscreen", True)
@@ -110,7 +109,6 @@ def select_files():
     webbrowser.open("C:/WordMergeOutput/") 
 
 
-
 # open button
 open_button = ttk.Button(
     window,
@@ -124,7 +122,3 @@ spazio2.pack(fill=tk.X)
 
 
 window.mainloop()
-
-
-
-
